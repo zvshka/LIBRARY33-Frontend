@@ -1,0 +1,11 @@
+.btn{
+    padding: 5px;
+    width: 150px;
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.gold{
+    background-color: gold;
+}
