@@ -6,10 +6,22 @@ nav{
     background-color: azure;
     justify-content: center;
 }
-nav > ul{
+nav > .btnholder, nav > ul{
     display: inline-flex;
+    gap: 25px;
+}
+nav > ul{
     margin: 0;
     padding: 0;
-    gap: 25px;
     list-style-type: none;
+}
+nav > ul > li, nav > .logo{
+    margin: auto 0;
+}
+.navlink{
+    text-decoration: none;
+    color: black;
+}
+.navlink:hover{
+    color: darkblue;
 }
