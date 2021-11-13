@@ -1,0 +1,9 @@
+.Catalogue{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.list{
+    flex-wrap: nowrap!important;
+    flex-direction: column;
+}
