@@ -1,0 +1,39 @@
+.SearchEl{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 300px;
+}
+.SearchEl > button{
+    width: 100%;
+}
+.SearchEl > *{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.125);
+}
+.SearchEl > *, .SearchEl > div:not(:first-of-type) > p:not(:first-of-type) ~ div{
+    border-radius: 5px;
+}
+.stock{
+    display: flex;
+    flex-direction: column;
+}
+.SearchEl > div, .SearchEl > div:not(:first-of-type) > p:not(:first-of-type) ~ div{
+    padding: 10px;
+}
+.SearchEl > div:first-of-type > input, .SearchEl > div:not(:first-of-type) > div > input[type='text']{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: none;
+    border: none;
+}
+input[type='text']:focus{
+    outline: none;
+}
+p{
+    font-weight: 700;
+    margin-bottom: 5px!important;
+}
+p:not(:first-of-type){
+    margin-top: 10px!important;
+}
