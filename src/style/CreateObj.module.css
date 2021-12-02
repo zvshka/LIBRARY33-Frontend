@@ -1,0 +1,28 @@
+.CreateObj{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 300px;
+    align-items: center;
+}
+.CreateObj > *:not(p){
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.125);
+}
+.CreateObj input, button{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: none;
+    border: none;
+}
+.CreateObj input:focus{
+    outline: none;
+}
+.CreateObj > div{
+    padding: 10px;
+    border-radius: 5px;
+}
+.CreateObj p{
+    font-weight: 700;
+    margin-top: 15px!important;
+}

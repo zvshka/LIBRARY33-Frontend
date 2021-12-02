@@ -1,6 +1,7 @@
 import NavBar from "./NavBar"
 import ContentWrapper from './ContentWrapper'
 import styles from '../style/Layout.module.css'
+import Footer from "./Footer"
 
 const Layout = ({children}) => {
     return (
@@ -9,6 +10,7 @@ const Layout = ({children}) => {
             <ContentWrapper>
                 {children}
             </ContentWrapper>
+            <Footer />
         </div>
     )
 }

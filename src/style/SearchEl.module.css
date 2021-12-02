@@ -27,13 +27,13 @@
     background: none;
     border: none;
 }
-input[type='text']:focus{
+.SearchEl input[type='text']:focus{
     outline: none;
 }
-p{
+.SearchEl p{
     font-weight: 700;
     margin-bottom: 5px!important;
 }
-p:not(:first-of-type){
+.SearchEl p:not(:first-of-type){
     margin-top: 10px!important;
 }
