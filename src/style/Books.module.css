@@ -2,3 +2,10 @@
     display: inline-flex;
     gap: 25px;
 }
+.header{
+    padding: 15px;
+    width: calc(100% - 30px);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
