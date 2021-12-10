@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import { useState } from "react"
 import { login } from '../features/auth/authSlice'
+import URLConst from "./URLConst"
 
 const SignUp = () => {
     const dispatch = useDispatch()
@@ -15,13 +16,13 @@ const SignUp = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await fetch('http://localhost:5000/auth/register', {
+        await fetch(`${URLConst}/auth/register`, {
             credentials: 'same-origin',
             method: 'POST',
             body: JSON.stringify({email, username, password, firstName, lastName}),
             headers: {'Content-Type': 'application/json'}
         }).then(res => res.json()).then(res => console.log(res))
-        const response = await fetch('http://localhost:5000/auth/login', {
+        const response = await fetch(`${URLConst}/auth/login`, {
             credentials: 'same-origin',
             method: 'POST',
             body: JSON.stringify({'username': username, 'password': password}),

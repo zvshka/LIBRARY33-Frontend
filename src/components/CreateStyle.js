@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 import Button from "../components/Button"
 import colors from '../style/Colors.module.css'
 import stylesheet from '../style/CreateObj.module.css'
+import URLConst from "./URLConst"
 
 const CreateStyle = () => {
     const accessToken = useSelector(state => state.auth.accessToken)
@@ -11,7 +12,7 @@ const CreateStyle = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch('http://localhost:5000/styles', {
+        fetch(`${URLConst}/styles`, {
             method: 'POST',
             body: JSON.stringify({ name }),
             headers: { 'Content-Type': 'application/json', 'authorization': `Bearer ${accessToken}` }

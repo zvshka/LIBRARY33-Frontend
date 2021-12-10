@@ -5,6 +5,7 @@ import Button from './Button'
 import logo from '../images/logo.png'
 import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../features/auth/authSlice'
+import URLConst from "./URLConst"
 
 const NavBar = () => {
     const dispatch = useDispatch()
@@ -13,7 +14,7 @@ const NavBar = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:5000/auth/login', {
+        const response = await fetch(`${URLConst}/auth/login`, {
             credentials: 'same-origin',
             method: 'POST',
             body: JSON.stringify({ 'username': 'admin', 'password': 'admin' }),

@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 import Button from "../components/Button"
 import colors from '../style/Colors.module.css'
 import stylesheet from '../style/CreateObj.module.css'
+import URLConst from "./URLConst"
 
 const CreateAuthor = () => {
     const accessToken = useSelector(state => state.auth.accessToken)
@@ -12,7 +13,7 @@ const CreateAuthor = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch('http://localhost:5000/authors', {
+        fetch(`${URLConst}/authors`, {
             method: 'POST',
             body: JSON.stringify({ name, description }),
             headers: { 'Content-Type': 'application/json', 'authorization': `Bearer ${accessToken}` }
