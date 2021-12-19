@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 import Button from "../components/Button"
 import colors from '../style/Colors.module.css'
 import stylesheet from '../style/CreateObj.module.css'
+import URLConst from "./URLConst"
 
 const CreatePublisher = () => {
     const accessToken = useSelector(state => state.auth.accessToken)
@@ -12,7 +13,7 @@ const CreatePublisher = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch('http://localhost:5000/publishers', {
+        fetch(`${URLConst}/publishers`, {
             method: 'POST',
             body: JSON.stringify({ name, address }),
             headers: { 'Content-Type': 'application/json', 'authorization': `Bearer ${accessToken}` }
