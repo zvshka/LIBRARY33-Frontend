@@ -23,9 +23,9 @@ const CreateAuthor = () => {
 
     return <div className={stylesheet.CreateObj}>
         <p>Создание автора</p>
-        <div className={`${colors.bggray}`}><input placeholder="name" onChange={e => setName(e.target.value)} /></div>
-        <div className={`${colors.bggray}`}><input placeholder="description" onChange={e => setDescription(e.target.value)} /></div>
-        <Button gold onClick={handleSubmit}>Create</Button>
+        <div className={`${colors.bggray}`}><input placeholder="Имя" onChange={e => setName(e.target.value)} /></div>
+        <div className={`${colors.bggray}`}><input placeholder="Описание" onChange={e => setDescription(e.target.value)} /></div>
+        <Button gold onClick={handleSubmit}>Создать</Button>
     </div>
 
 }

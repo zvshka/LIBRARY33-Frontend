@@ -1,0 +1,8 @@
+.heading{
+    display: inline-flex;
+    gap: 5px;
+    font-weight: 700;
+}
+.username{
+    color: hsl(43, 96%, 40%);
+}

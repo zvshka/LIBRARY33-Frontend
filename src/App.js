@@ -6,6 +6,7 @@ import Books from './pages/Books';
 import CreatePG from './pages/CreatePG';
 import BookInfo from './components/BookInfo';
 import Signing from './pages/Signing';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/Create_PG" component={CreatePG} />
             <Route path="/book/:id" component={BookInfo} />
             <Route exact path="/Signing" component={Signing} />
+            <Route exact path="/Profile" component={Profile} />
           </Switch>
         </Layout>
       </Router>

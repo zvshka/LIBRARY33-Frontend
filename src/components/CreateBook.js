@@ -26,12 +26,12 @@ const CreateBook = () => {
 
     return <div className={stylesheet.CreateObj}>
         <p>Создание книги</p>
-        <div className={`${colors.bggray}`}><input placeholder="title" onChange={e => setTitle(e.target.value)} /></div>
-        <div className={`${colors.bggray}`}><input placeholder="description" onChange={e => setDescription(e.target.value)} /></div>
-        <div className={`${colors.bggray}`}><input placeholder="authors" onChange={e => setAuthors(e.target.value.split(' ').map(Number))} /></div>
-        <div className={`${colors.bggray}`}><input placeholder="publisher" onChange={e => setPublisher(Number(e.target.value))} /></div>
-        <div className={`${colors.bggray}`}><input placeholder="styles" onChange={e => setStyles(e.target.value.split(' ').map(Number))} /></div>
-        <Button gold onClick={handleSubmit}>Create</Button>
+        <div className={`${colors.bggray}`}><input placeholder="Название" onChange={e => setTitle(e.target.value)} /></div>
+        <div className={`${colors.bggray}`}><input placeholder="Описание" onChange={e => setDescription(e.target.value)} /></div>
+        <div className={`${colors.bggray}`}><input placeholder="Авторы (id через пробел)" onChange={e => setAuthors(e.target.value.split(' ').map(Number))} /></div>
+        <div className={`${colors.bggray}`}><input placeholder="Издатель" onChange={e => setPublisher(Number(e.target.value))} /></div>
+        <div className={`${colors.bggray}`}><input placeholder="Жанры (id через пробел)" onChange={e => setStyles(e.target.value.split(' ').map(Number))} /></div>
+        <Button gold onClick={handleSubmit}>Создать</Button>
     </div>
 
 }

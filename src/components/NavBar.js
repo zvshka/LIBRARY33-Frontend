@@ -32,8 +32,14 @@ const NavBar = () => {
             </ul>
             <div className={styles.logo}><img src={logo} alt='logo.png' />LIBRARY33</div>
             <div className={styles.btnholder}>
-                <div><Button onClick={handleLogin}>Вход</Button></div>
-                <div><Link to="/Signing"><Button gold>Регистрация</Button></Link></div>
+                <div>
+                    <Button onClick={handleLogin}>Вход</Button>
+                </div>
+                <div>
+                    <Link to="/Signing">
+                        <Button gold>Регистрация</Button>
+                    </Link>
+                </div>
             </div>
         </nav>
     } else {
@@ -44,7 +50,9 @@ const NavBar = () => {
             </ul>
             <div className={styles.logo}><img src={logo} alt='logo.png' />LIBRARY33</div>
             <div className={styles.btnholder}>
-                <Button gold className={styles.username}>{user.username}</Button>
+                <Link to="/Profile">
+                    <Button gold className={styles.username}>{user.username}</Button>
+                </Link>
             </div>
         </nav>
     }
