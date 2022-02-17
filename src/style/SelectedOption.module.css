@@ -1,0 +1,12 @@
+.selected_option {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 400px;
+}
+.selected_option > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 195px;
+}

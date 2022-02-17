@@ -1,10 +1,10 @@
-import SignUp from "../components/SignUp"
-import SignIn from "../components/SignIn"
+import SignUp from "../components/SignUp";
 
 const Signing = () => {
-    return <>
-    <SignUp />
-    <SignIn />
+  return (
+    <>
+      <SignUp />
     </>
-}
-export default Signing
+  );
+};
+export default Signing;

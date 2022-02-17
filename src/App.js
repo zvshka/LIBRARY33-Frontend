@@ -1,12 +1,13 @@
-import Layout from './components/Layout'
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import Home from './pages/Home';
-import Books from './pages/Books';
-import CreatePG from './pages/CreatePG';
-import BookInfo from './components/BookInfo';
-import Signing from './pages/Signing';
-import Profile from './pages/Profile';
+import Layout from "./components/Layout";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Home from "./pages/Home";
+import Books from "./pages/Books";
+import CreatePG from "./pages/CreatePG";
+import BookInfo from "./components/BookInfo";
+import Signing from "./pages/Signing";
+import Profile from "./pages/Profile";
+import LoggingIn from "./pages/LoggingIn";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/book/:id" component={BookInfo} />
             <Route exact path="/Signing" component={Signing} />
             <Route exact path="/Profile" component={Profile} />
+            <Route exact path="/LoggingIn" component={LoggingIn} />
           </Switch>
         </Layout>
       </Router>
