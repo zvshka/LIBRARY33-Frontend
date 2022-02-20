@@ -13,7 +13,7 @@
 .SearchEl > *, .SearchEl > div:not(:first-of-type) > p:not(:first-of-type) ~ div{
     border-radius: 5px;
 }
-.stock{
+.SearchEl .stock{
     display: flex;
     flex-direction: column;
 }

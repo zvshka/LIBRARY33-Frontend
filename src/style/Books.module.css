@@ -5,7 +5,52 @@
 .header{
     padding: 15px;
     width: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.header > *{
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+}
+.header > * > p{
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+}
+.header > .sorting_group > .sorting{
+    display: inline-flex;
+    border-radius: 5px;
+    gap: 5px;
+    width: 250px;
+}
+.header > .sorting_group > .sorting > select{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+}
+.header > .sorting_group > .sorting > select:focus{
+    outline: none;
+}
+.header > .sorting_group > .sorting > p{
+    font-weight: 400;
+}
+.header > .sorting_group > .sorting > *, .header > .sorting_group > .sorting > * > *{
+    padding: 10px;
+    padding-right: 0;
+    margin: 0;
+}
+.header > .sorting_group {
+    display: inline-flex;
+    gap: 10px;
+    justify-content: left;
+}
+.header > .sorting_group:hover, .header > .sorting_group > .sorting > select{
+    cursor: pointer;
+
 }

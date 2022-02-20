@@ -10,6 +10,18 @@
 .bgdgray{
     background-color: #D1D4DB!important;
 }
+.bgdblue{
+    background-color: #1D2733!important;
+}
 .txtdgold{
     color: #7e6012!important;
+}
+.txtwhite{
+    color: #FFFFFF;
+}
+.txtblack{
+    color: #000000!important;
+}
+.txtdgray{
+    color: #6B7380;
 }

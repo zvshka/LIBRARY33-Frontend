@@ -24,7 +24,7 @@ const CreatePublisher = () => {
     return <div className={stylesheet.CreateObj}>
         <p>Создание издательства</p>
         <div className={`${colors.bggray}`}><input placeholder="Название" onChange={e => setName(e.target.value)} /></div>
-        <div className={`${colors.bggray}`}><input placeholder="Адрес" onChange={e => setAddress(e.target.value)} /></div>
+        <div className={`${colors.bggray}`}><textarea placeholder="Адрес" onChange={e => setAddress(e.target.value)}></textarea></div>
         <Button gold onClick={handleSubmit}>Создать</Button>
     </div>
 

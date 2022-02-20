@@ -15,16 +15,16 @@ function App() {
       <Router>
         <Layout>
           <Switch>
-            <Route exact path="/Home" component={Home} />
+            <Route exact path="/home" component={Home} />
             <Route exact path="/">
-              <Redirect to="/Home" />
+              <Redirect to="/home" />
             </Route>
-            <Route exact path="/Books" component={Books} />
-            <Route exact path="/Create_PG" component={CreatePG} />
-            <Route path="/book/:id" component={BookInfo} />
-            <Route exact path="/Signing" component={Signing} />
-            <Route exact path="/Profile" component={Profile} />
-            <Route exact path="/LoggingIn" component={LoggingIn} />
+            <Route exact path="/books" component={Books} />
+            <Route exact path="/create_PG" component={CreatePG} />
+            <Route path="/books/:id" component={BookInfo} />
+            <Route exact path="/signing" component={Signing} />
+            <Route exact path="/profile" component={Profile} />
+            <Route exact path="/loggingin" component={LoggingIn} />
           </Switch>
         </Layout>
       </Router>

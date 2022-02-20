@@ -3,11 +3,8 @@ import { useState } from "react";
 import styles from "../style/SelectedOption.module.css";
 
 const SelectedOption = ({ options, setSelectedOptions, selectedOptions }) => {
-  console.log(options);
 
   const [givenOptions, setGivenOptions] = useState([]);
-  console.log(givenOptions);
-  console.log(selectedOptions);
   useEffect(() => {
     setGivenOptions(options);
   }, [options]);
@@ -18,7 +15,6 @@ const SelectedOption = ({ options, setSelectedOptions, selectedOptions }) => {
       e.target.style.backgroundColor = "#fff";
       const index = parseInt(e.target.name);
       const indexInSelected = selectedOptions.indexOf(givenOptions[index]);
-      console.log(indexInSelected);
       setSelectedOptions(
         selectedOptions
           .slice(0, indexInSelected)

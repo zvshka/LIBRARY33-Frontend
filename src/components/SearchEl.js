@@ -10,7 +10,7 @@ const SearchEl = () => {
         <div className={`${colors.bggray}`}>
             <p>Наличие:</p>
             <div className={styles.stock}>
-                <div><input type='radio' id='stock_all' name='in_stock' value='all' /><label for='stock_all'>Все книги</label></div>
+                <div><input type='radio' id='stock_all' name='in_stock' value='all' checked /><label for='stock_all'>Все книги</label></div>
                 <div><input type='radio' id='stock_in_stock' name='in_stock' value='in_stock' /><label for='stock_in_stock'>В наличии</label></div>
                 <div><input type='radio' id='stock_not_in_stock' name='in_stock' value='not_in_stock' /><label for='stock_not_in_stock'>Нет в наличии</label></div>
             </div>

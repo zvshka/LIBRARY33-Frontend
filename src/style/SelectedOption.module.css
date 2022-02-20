@@ -2,11 +2,15 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  width: 400px;
+  width: 300px;
 }
 .selected_option > div {
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: 195px;
+}
+.selected_option button{
+  width: 145px;
+  height: 2em;
 }

@@ -70,10 +70,10 @@ const CreateBook = () => {
         />
       </div>
       <div className={`${colors.bggray}`}>
-        <input
+        <textarea
           placeholder="Описание"
           onChange={(e) => setDescription(e.target.value)}
-        />
+        ></textarea>
       </div>
 
       <SelectedOption

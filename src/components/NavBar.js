@@ -13,12 +13,12 @@ const NavBar = () => {
       <nav className={colors.bglgray}>
         <ul>
           <li>
-            <Link to="/Home" className={styles.navlink}>
+            <Link to="/home" className={styles.navlink}>
               Новости
             </Link>
           </li>
           <li>
-            <Link to="/Books" className={styles.navlink}>
+            <Link to="/books" className={styles.navlink}>
               Книги
             </Link>
           </li>
@@ -29,12 +29,12 @@ const NavBar = () => {
         </div>
         <div className={styles.btnholder}>
           <div>
-            <Link to="/LoggingIn">
+            <Link to="/loggingIn">
               <Button>Вход</Button>
             </Link>
           </div>
           <div>
-            <Link to="/Signing">
+            <Link to="/signing">
               <Button gold>Регистрация</Button>
             </Link>
           </div>
@@ -46,12 +46,12 @@ const NavBar = () => {
       <nav className={colors.bglgray}>
         <ul>
           <li>
-            <Link to="/Home" className={styles.navlink}>
+            <Link to="/home" className={styles.navlink}>
               Новости
             </Link>
           </li>
           <li>
-            <Link to="/Books" className={styles.navlink}>
+            <Link to="/books" className={styles.navlink}>
               Книги
             </Link>
           </li>
@@ -61,7 +61,7 @@ const NavBar = () => {
           LIBRARY33
         </div>
         <div className={styles.btnholder}>
-          <Link to="/Profile">
+          <Link to="/profile">
             <Button gold className={styles.username}>
               {user.username}
             </Button>
