@@ -1,18 +1,34 @@
 .BookCard{
     border-radius: 10px;
     width: 200px;
-    height: 300px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
 }
-.img{
+.BookCard a{
+    height: 280px;
+    text-decoration: none;
+}
+.BookCard .img, .BookCard img{
     height: 200px;
+    width: 200px;
+    border-radius: 10px 10px 0 0;
 }
-.rate_p, .title_p{
-    padding: 15px;
+.BookCard .title_p{
+    height: 50px;
 }
-div > p {
+.BookCard div > p {
     margin: 0;
 }
-.rate_p{
+.BookCard .rate_p{
     border-radius: 0 0 10px 10px;
+    height: 40px;
+}
+.BookCard .rate_p > p{
+    font-size: 12px;
+    padding: calc((40px - 1em) / 2);
+}
+.BookCard .title_p > p{
+    padding: calc((50px - 1em) / 2);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

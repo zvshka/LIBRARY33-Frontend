@@ -8,14 +8,18 @@
 .CreateObj > *:not(p){
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.125);
 }
-.CreateObj input, button{
+.CreateObj input, button, textarea{
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 300px;
     background: none;
     border: none;
 }
-.CreateObj input:focus{
+.CreateObj textarea{
+    resize: vertical;
+    height: 5em;
+}
+.CreateObj input:focus, .CreateObj textarea:focus{
     outline: none;
 }
 .CreateObj > div{
