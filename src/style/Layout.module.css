@@ -3,4 +3,5 @@ a{
 }
 .Layout{
     min-width: 1300px;
+    min-height: 100vh;
 }

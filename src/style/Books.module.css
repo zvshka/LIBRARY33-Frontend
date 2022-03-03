@@ -50,7 +50,7 @@
     gap: 10px;
     justify-content: left;
 }
-.header > .sorting_group:hover, .header > .sorting_group > .sorting > select{
+.header > .sorting_group > .sorting:hover, .header > .sorting_group > .sorting > select{
     cursor: pointer;
 
 }

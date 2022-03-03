@@ -1,0 +1,24 @@
+.SignIn, .SignUp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+    margin: 25px auto;
+    align-items: center;
+}
+.SignIn > div, .SignUp > div{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #E5E7EA;
+    width: 60%;
+}
+.SignIn input, .SignUp input{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: none;
+    border: none;
+}
+.SignIn input:focus, .SignUp input:focus{
+    outline: none;
+}
