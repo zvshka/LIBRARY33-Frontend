@@ -4,6 +4,7 @@ import { login } from "../features/auth/authSlice";
 import URLConst from "./URLConst";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import styles from '../style/Authentication.module.css';
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -27,16 +28,16 @@ const SignUp = () => {
 
   return (
     <>
-      <form id="signin">
-        <input
+      <form id="signin" className={styles.SignIn}>
+        <div><input
           placeholder="Логин"
           onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
+        /></div>
+        <div><input
           type="password"
           placeholder="Пароль"
           onChange={(e) => setPassword(e.target.value)}
-        />
+        /></div>
         <Link to="books/">
           <Button gold onClick={handleSubmit}>
             Войти

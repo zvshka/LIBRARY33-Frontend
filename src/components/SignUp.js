@@ -4,6 +4,7 @@ import { login } from "../features/auth/authSlice";
 import URLConst from "./URLConst";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import styles from '../style/Authentication.module.css';
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -47,34 +48,34 @@ const SignUp = () => {
 
   return (
     <>
-      <form id="signup">
-        <input
+      <form id="signup" className={styles.SignUp}>
+        <div><input
           placeholder="Логин"
           onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
+        /></div>
+        <div><input
           type="email"
           placeholder="E-mail"
           onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
+        /></div>
+        <div><input
           type="password"
           placeholder="Пароль"
           onChange={(e) => setPassword(e.target.value)}
-        />
-        <input
+        /></div>
+        <div><input
           type="password"
           placeholder="Повтор пароля"
           onChange={(e) => setPasswordRepeat(e.target.value)}
-        />
-        <input
+        /></div>
+        <div><input
           placeholder="Имя"
           onChange={(e) => setFirstName(e.target.value)}
-        />
-        <input
+        /></div>
+        <div><input
           placeholder="Фамилия"
           onChange={(e) => setLastName(e.target.value)}
-        />
+        /></div>
         <Link to="books/">
           <Button gold onClick={handleSubmit}>
             Создать аккаунт
